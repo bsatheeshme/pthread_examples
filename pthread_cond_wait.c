@@ -48,3 +48,19 @@ int main()
 	pthread_join(thread[1], NULL);  
 	return 0; 
 } 
+
+/*  ==OUTPUT==
+In main
+thread id = 139650694690560
+In main
+thread id = 139650686297856
+In function
+thread id = 28069
+Waiting on condition variable cond1 dataowner[28069]
+In function
+thread id = 28068
+Signaling condition variable cond1 dataowner[28068]
+Returning thread
+Waiting on condition variable cond2 dataowner[28069]
+Returning thread
+*/
